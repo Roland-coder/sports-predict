@@ -57,6 +57,6 @@ if st.button('Predict Overall Performance'):
 	st.header("Please find predicted value below")
 # 	st.write("The overall predicted score for the above player is", np.round(prediction[0]))
   	
-	st.write("The overall predicted score for the above player is", aa)
+	st.write("The overall predicted score for the above player is", clubs.index(club))
 else:
 	st.write('Thank You For Trusting Us')
