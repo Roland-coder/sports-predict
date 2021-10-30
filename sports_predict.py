@@ -40,7 +40,7 @@ data = {'Potential' : potential,
  'ReleaseClause' : release_clause
 
 	}
-aa = Clubs.index(club)
+aa = Clubs[4]
 # @st.cache
 # def load_model(ttl=30):
 # 	  return pickle.load(open('final_model.save', 'rb'))
@@ -57,6 +57,6 @@ if st.button('Predict Overall Performance'):
 	st.header("Please find predicted value below")
 # 	st.write("The overall predicted score for the above player is", np.round(prediction[0]))
   	
-	st.write("The overall predicted score for the above player is", np.round(prediction[0]))
+	st.write("The overall predicted score for the above player is", aa)
 else:
 	st.write('Thank You For Trusting Us')
