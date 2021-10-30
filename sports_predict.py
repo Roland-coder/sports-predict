@@ -40,7 +40,7 @@ data = {'Potential' : potential,
  'ReleaseClause' : release_clause
 
 	}
-aa = Clubs[4]
+aa = clubs[4]
 # @st.cache
 # def load_model(ttl=30):
 # 	  return pickle.load(open('final_model.save', 'rb'))
