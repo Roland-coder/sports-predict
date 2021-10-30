@@ -27,7 +27,7 @@ short_passing = st.slider("Player Short Passing: ", 0, 100)
 reactions = st.slider("Player Reactions: ", 0, 100)
 vision = st.slider("Player Vision: ", 0, 100)
 composure = st.slider("Player Composure: ", 0, 100)
-release_clause = st.input("Please enter release Clause")
+release_clause = st.number_input("Please enter release Clause")
 
 data = {'Potential' : potential,
  'Club' : clubs.index(club),
