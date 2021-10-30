@@ -30,7 +30,7 @@ composure = st.slider("Player Composure: ", 0, 100)
 release_clause = st.number_input("Please enter release Clause")
 
 data = {'Potential' : potential,
- 'Club' : clubs.index(club)+1,
+ 'Club' : clubs.index(club),
  'Wage' : wage,
  'International Reputation' : international_reputation,
  'ShortPassing' : short_passing,
@@ -57,6 +57,6 @@ if st.button('Predict Overall Performance'):
 	st.header("Please find predicted value below")
 # 	st.write("The overall predicted score for the above player is", np.round(prediction[0]))
   	
-	st.write("The overall predicted score for the above player is", clubs.index(club)+1)
+	st.write("The overall predicted score for the above player is", clubs.index(club))
 else:
 	st.write('Thank You For Trusting Us')
